@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Matis first thymeleaf app</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <link rel="stylesheet" type="text/css" media="all" href="../css/style.css" th:href="@{/css/style.css}"/>
+</head>
+
+<body>
+    <img th:src="@{/stsmlogo.png}">
+    <img th:src="@{/images/stsmlogo.png}">
+    <img th:src="@{/resources/images/stsmlogo.png}">
+    <img th:src="@{/main/resources/stsmlogo.png}">
+    <img th:src="@{/src/main/resources/stsmlogo.png}">
+    <img src="../images/stsmlogo.png" alt="STSM logo" title="STSM logo"
+    th:src="@{/images/stsmlogo.png}" >
+
+    <!--<div>-->
+<!--
+
+    <header>
+        <p th:text="${name}">Welcome to our grocery store!</p>
+        <images src="../../images/obraz.png" alt="STSM logo" title="STSM logo"
+             th:src="@{images/obraz.png}" th:alt-title="#{title.application}"/>
+    </header>
+
+    <div class="main" th:unless="${#lists.isEmpty(persons)}">
+        <table>
+            <thead>
+            <tr>
+                <th>Date Planted</th>
+                <th>Covered</th>
+                <th>Type</th>
+                <th>Features</th>
+                <th>Rows</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr th:each="person : ${persons}">
+                <td th:text="${person.name}">Jan</td>
+                <td th:text="${person.lastName}">Kowalski</td>
+            </tr>
+            </tbody>
+        </table>
+
+    </div>
+</div>
+
+<section>
+    <article></article>
+</section>
+<footer></footer>
+-->
+</body>
+
+</html>
